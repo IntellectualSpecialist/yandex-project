@@ -1,0 +1,21 @@
+.info__item {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.info__name {
+  color: rgba($primary-text-color, 0.7);
+}
+
+.info__value {
+  font-weight: 600;
+
+  del {
+    text-decoration-thickness: 2px;
+    text-decoration-color: $accent-color;
+  }
+
+  ins {
+    text-decoration: none;
+  }
+}

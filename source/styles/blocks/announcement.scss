@@ -1,0 +1,9 @@
+.announcement__description {
+  color: $quaternary-text-color;
+}
+
+.announcement__image {
+  &--decor {
+    border-radius: 168px / 107px;
+  }
+}

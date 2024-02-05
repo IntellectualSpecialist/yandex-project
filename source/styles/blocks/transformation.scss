@@ -1,0 +1,36 @@
+.transformation {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 335px;
+    height: 182px;
+    background-image: url("../../images/plane-mobile@1x.png");
+  }
+}
+
+.transformation__description {
+  color: $quaternary-text-color;
+}
+
+.transformation__list {
+  counter-reset: transformation-list;
+  position: relative;
+}
+
+.transformation__item {
+  &::before {
+    @include icon;
+    counter-increment: transformation-list;
+    content: counter(transformation-list);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    background-color: $base-bg-color;
+  }
+}

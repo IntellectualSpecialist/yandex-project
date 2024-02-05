@@ -1,0 +1,25 @@
+.button {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 66px;
+
+  &--primary {
+    color: $tertiary-text-color;
+    background-color: $primary-bg-color;
+  }
+
+  &--secondary {
+    color: $secondary-text-color;
+    background-color: rgba($base-bg-color, 0.9);
+  }
+
+  &--tertiary {
+    line-height: 19px;
+    color: $quaternary-text-color;
+    border: 1px solid $sextuple-bg-color;
+    border-radius: 62px;
+  }
+}

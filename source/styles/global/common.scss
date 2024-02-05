@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: $primary-font;
+  font-size: 18px;
+  line-height: 22px;
+  color: $primary-text-color;
+  background-image:
+    url("../../images/pattern-mobile@1x.png"),
+    linear-gradient($tertiary-bg-color, $tertiary-bg-color 812px, transparent 812px, transparent);
+  background-repeat: repeat-x;
+}

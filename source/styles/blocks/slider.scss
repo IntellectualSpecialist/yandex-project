@@ -1,0 +1,48 @@
+.slider__item {
+  background-color: $tertiary-bg-color;
+  background-image: url("../../images/pattern-mobile@1x.png");
+}
+
+.slider__arrow {
+  @include icon;
+  padding: 0;
+  border: none;
+  background-color: $quaternary-bg-color;
+  background-image: url("../../images/icons/stack.svg#arrow-icon");
+  background-size: 10px 18px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &--prev {
+    transform: rotate(180deg);
+  }
+
+  &--disabled {
+    background-color: rgba($quaternary-bg-color, 0.2);
+  }
+}
+
+.slider__toggle-button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border-radius: 5px;
+  border: none;
+  background-color: $quinary-bg-color;
+  cursor: pointer;
+
+  &--current {
+    background-color: $quaternary-bg-color;
+  }
+}
+
+.slider__counter {
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba($primary-text-color, 0.6);
+}
+
+.slider__current-slide {
+  color: $primary-text-color;
+}
