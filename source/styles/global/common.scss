@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: $primary-font;
@@ -8,4 +14,10 @@ body {
     url("../../images/pattern-mobile@1x.png"),
     linear-gradient($tertiary-bg-color, $tertiary-bg-color 812px, transparent 812px, transparent);
   background-repeat: repeat-x;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }

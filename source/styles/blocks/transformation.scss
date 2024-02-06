@@ -1,30 +1,48 @@
-.transformation {
+.transformation__wrapper {
   position: relative;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
+    z-index: 1;
+    bottom: 310px;
+    left: 0;
     width: 335px;
     height: 182px;
     background-image: url("../../images/plane-mobile@1x.png");
   }
 }
 
+.transformation__title {
+  margin-bottom: 12px;
+}
+
 .transformation__description {
+  margin: 0;
+  margin-bottom: 148px;
   color: $quaternary-text-color;
 }
 
 .transformation__list {
   counter-reset: transformation-list;
-  position: relative;
 }
 
 .transformation__item {
+  position: relative;
+  margin: 0;
+  margin-bottom: 28px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   &::before {
     @include icon;
     counter-increment: transformation-list;
     content: counter(transformation-list);
     position: absolute;
+    top: 0;
+    left: -52px;
     display: flex;
     justify-content: center;
     align-items: center;

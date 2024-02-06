@@ -3,4 +3,10 @@
   line-height: 19px;
   color: rgba($primary-text-color, 0.6);
   background-color: $quinary-bg-color;
+  overflow: hidden;
+}
+
+.main-footer__wrapper {
+  padding-top: 40px;
+  padding-bottom: 60px;
 }

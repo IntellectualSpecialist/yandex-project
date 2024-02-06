@@ -1,9 +1,19 @@
 .title-middle {
+  margin: 0;
   font-family: $secondary-font;
   font-size: 28px;
   line-height: 38px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.title-middle__top {
+  display: block;
+  margin-bottom: 261px;
+}
+
+.title-middle__bottom {
+  display: block;
 }
 
 .title-middle__accent {

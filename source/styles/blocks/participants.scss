@@ -1,1 +1,32 @@
-// .participants
+.participants__title {
+  margin-bottom: 40px;
+}
+
+.participants__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 335px;
+  padding: 0 20px;
+}
+
+.participant-card__image {
+  margin-bottom: 28px;
+}
+
+.participant-card__info {
+  flex-grow: 1;
+}
+
+.participant-card__name {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.participant-card__grade {
+  margin: 0;
+}
+
+.participant-card__more {
+  margin-top: 20px;
+}

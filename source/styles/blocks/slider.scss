@@ -1,4 +1,31 @@
+.slider {
+  overflow-x: hidden;
+
+  &--special {
+    .slider__wrapper {
+      column-gap: 32px;
+      margin: 0;
+      margin-bottom: 40px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .slider__toggles {
+      align-items: center;
+    }
+  }
+}
+
+.slider__wrapper {
+  display: flex;
+  min-width: max-content;
+  column-gap: 40px;
+  margin-bottom: 28px;
+}
+
 .slider__item {
+  width: 335px;
+  padding: 62px 24px 34px 72px;
   background-color: $tertiary-bg-color;
   background-image: url("../../images/pattern-mobile@1x.png");
 }
@@ -23,6 +50,12 @@
   }
 }
 
+.slider__toggles {
+  display: flex;
+  column-gap: 16px;
+  justify-content: center;
+}
+
 .slider__toggle-button {
   width: 10px;
   height: 10px;
@@ -35,6 +68,14 @@
   &--current {
     background-color: $quaternary-bg-color;
   }
+}
+
+.slider__toggles-list {
+  display: flex;
+  column-gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .slider__counter {

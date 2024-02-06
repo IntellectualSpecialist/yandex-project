@@ -1,8 +1,28 @@
 .hero {
   background-image: url("../../images/background-collage@1x.png");
   background-repeat: no-repeat;
+  background-size: 900px 812px;
+  background-position: right -122px bottom;
+  overflow: hidden;
+}
+
+.hero__title {
+  margin-bottom: 24px;
 }
 
 .hero__description {
+  margin-bottom: 32px;
   line-height: 23px;
+}
+
+.hero__buttons-container {
+  margin-bottom: 291px;
+}
+
+.hero__button {
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
