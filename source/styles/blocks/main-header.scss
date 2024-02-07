@@ -5,4 +5,9 @@
 .main-header__logo {
   width: 213px;
   height: 32px;
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 36px;
+  }
 }

@@ -1,28 +1,47 @@
 .hero {
-  background-image: url("../../images/background-collage@1x.png");
-  background-repeat: no-repeat;
-  background-size: 900px 812px;
-  background-position: right -122px bottom;
   overflow: hidden;
 }
 
 .hero__title {
+  max-width: 335px;
   margin-bottom: 24px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 542px;
+  }
 }
 
 .hero__description {
+  max-width: 335px;
   margin-bottom: 32px;
   line-height: 23px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 542px;
+    margin-bottom: 40px;
+  }
 }
 
 .hero__buttons-container {
+  max-width: 335px;
   margin-bottom: 291px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 16px;
+    max-width: 542px;
+    margin-bottom: 130px;
+  }
 }
 
 .hero__button {
   margin-bottom: 14px;
 
   &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
 }

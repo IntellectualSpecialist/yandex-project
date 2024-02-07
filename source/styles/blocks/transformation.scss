@@ -11,30 +11,81 @@
     height: 182px;
     background-image: url("../../images/plane-mobile@1x.png");
   }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      right: 25px;
+      bottom: 25px;
+      left: auto;
+      width: 401px;
+      height: 235px;
+      background-image: url("../../images/plane-desktop@1x.png");
+    }
+  }
 }
 
 .transformation__title {
+  max-width: 335px;
   margin-bottom: 12px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 806px;
+    margin-bottom: 54px;
+  }
 }
 
 .transformation__description {
-  margin: 0;
   margin-bottom: 148px;
-  color: $quaternary-text-color;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 72px;
+    left: 367px;
+    width: 280px;
+    margin-bottom: 0;
+  }
 }
 
 .transformation__list {
   counter-reset: transformation-list;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 394px);
+    gap: 20px;
+  }
+}
+
+.transformation__item-container-wide {
+  @media (min-width: $desktop-width) {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 394px);
+    column-gap: 20px;
+  }
+}
+
+.transformation__item-container-wide--alternative {
+  @media (min-width: $desktop-width) {
+    display: block;
+
+    .transformation__item {
+      padding-right: 333px;
+    }
+  }
+}
+
+.transformation__item-container-long {
+  @media (min-width: $desktop-width) {
+    grid-row: span 2;
+  }
 }
 
 .transformation__item {
   position: relative;
+  max-width: 243px;
   margin: 0;
-  margin-bottom: 28px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 
   &::before {
     @include icon;
@@ -50,5 +101,30 @@
     line-height: 24px;
     font-weight: 600;
     background-color: $base-bg-color;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px;
+    padding-left: 72px;
+    max-width: none;
+    width: 100%;
+    height: 100%;
+    background-color: $tertiary-bg-color;
+    background-image: url("../../images/pattern-mobile@1x.png");
+
+    &::before {
+      top: 25px;
+      left: 25px;
+    }
+  }
+}
+
+.transformation__toggles {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

@@ -28,4 +28,12 @@
     border: 1px solid $sextuple-bg-color;
     border-radius: 62px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 49px;
+
+    &--tertiary {
+      padding: 12px;
+    }
+  }
 }

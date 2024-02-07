@@ -11,6 +11,10 @@
 
 .page__main-header {
   margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 62px;
+  }
 }
 
 .page__main-content {

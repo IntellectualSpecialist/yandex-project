@@ -11,9 +11,22 @@ body {
   line-height: 22px;
   color: $primary-text-color;
   background-image:
+    url("../../images/background-collage@1x.png"),
     url("../../images/pattern-mobile@1x.png"),
     linear-gradient($tertiary-bg-color, $tertiary-bg-color 812px, transparent 812px, transparent);
-  background-repeat: repeat-x;
+  background-repeat: no-repeat, repeat-x;
+  background-size: 900px 812px, auto;
+  background-position: right -122px top;
+
+  @media (min-width: $desktop-width) {
+    background-image:
+      url("../../images/background-collage-desktop@1x.png"),
+      url("../../images/pattern-mobile@1x.png"),
+      linear-gradient($tertiary-bg-color, $tertiary-bg-color 700px, transparent 700px, transparent);
+    background-size: 1920px 881px, auto, auto;
+    background-repeat: no-repeat, repeat-x;
+    background-position: top -123px center;
+  }
 }
 
 img {
