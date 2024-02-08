@@ -1,6 +1,6 @@
 .announcement__top-wrapper {
   position: relative;
-  margin-bottom: 34px;
+  margin-bottom: 21px;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -10,13 +10,17 @@
   }
 }
 
-.announcement__image--container {
+.announcement__image-container {
+  margin-bottom: 19px;
+
   @media (min-width: $desktop-width) {
     grid-row: span 2;
   }
 }
 
 .announcement__image {
+  display: block;
+
   &--decor {
     position: absolute;
     z-index: -1;
@@ -34,12 +38,15 @@
   }
 
   &--collage {
-    margin-bottom: 24px;
+    width: 375px;
+    max-width: none;
+    margin-left: -20px;
 
     @media (min-width: $desktop-width) {
       width: 530px;
       height: 610px;
-      margin-bottom: 0;
+      margin-top: -47px;
+      margin-left: -1px;
     }
   }
 }
@@ -48,7 +55,7 @@
   max-width: 335px;
 
   &--bottom {
-    margin-bottom: 44px;
+    margin-bottom: 29px;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,9 +71,14 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 530px 704px;
-    grid-template-rows: 207px;
-    column-gap: 17px;
+    column-gap: 15px;
     margin-left: -27px;
+  }
+}
+
+.announcement__info-container {
+  @media (min-width: $desktop-width) {
+    margin-top: 5px;
   }
 }
 

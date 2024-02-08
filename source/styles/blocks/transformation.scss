@@ -6,21 +6,33 @@
     position: absolute;
     z-index: 1;
     bottom: 310px;
-    left: 0;
+    left: 20px;
     width: 335px;
     height: 182px;
-    background-image: url("../../images/plane-mobile@1x.png");
+    background-image:
+      image-set(
+        url("../../images/plane-mobile@2x.webp") type("image/webp") 2x,
+        url("../../images/plane-mobile@1x.webp") type("image/webp") 1x,
+        url("../../images/plane-mobile@2x.png") type("image/png") 2x,
+        url("../../images/plane-mobile@1x.png") type("image/png") 1x
+      );
   }
 
   @media (min-width: $desktop-width) {
     &::before {
       content: "";
-      right: 25px;
-      bottom: 25px;
+      right: 10px;
+      bottom: -2px;
       left: auto;
       width: 401px;
       height: 235px;
-      background-image: url("../../images/plane-desktop@1x.png");
+      background-image:
+        image-set(
+          url("../../images/plane-desktop@2x.webp") type("image/webp") 2x,
+          url("../../images/plane-desktop@1x.webp") type("image/webp") 1x,
+          url("../../images/plane-desktop@2x.png") type("image/png") 2x,
+          url("../../images/plane-desktop@1x.png") type("image/png") 1x
+        );
     }
   }
 }
@@ -31,7 +43,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 806px;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
   }
 }
 
@@ -40,8 +52,8 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 72px;
-    left: 367px;
+    top: 71px;
+    left: 373px;
     width: 280px;
     margin-bottom: 0;
   }
@@ -71,7 +83,7 @@
     display: block;
 
     .transformation__item {
-      padding-right: 333px;
+      padding-right: 315px;
     }
   }
 }
@@ -86,6 +98,7 @@
   position: relative;
   max-width: 243px;
   margin: 0;
+  margin-bottom: 28px;
 
   &::before {
     @include icon;
@@ -108,17 +121,26 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 20px;
-    padding-left: 72px;
     max-width: none;
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 20px;
+    padding-left: 72px;
+    font-size: 20px;
+    line-height: 24px;
     background-color: $tertiary-bg-color;
-    background-image: url("../../images/pattern-mobile@1x.png");
+    background-image:
+      image-set(
+        url("../../images/pattern-mobile@2x.webp") type("image/webp") 2x,
+        url("../../images/pattern-mobile@1x.webp") type("image/webp") 1x,
+        url("../../images/pattern-mobile@2x.png") type("image/png") 2x,
+        url("../../images/pattern-mobile@1x.png") type("image/png") 1x
+      );
 
     &::before {
-      top: 25px;
-      left: 25px;
+      top: 20px;
+      left: 20px;
     }
   }
 }

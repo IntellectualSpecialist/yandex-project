@@ -3,7 +3,7 @@
   column-gap: 30px;
   min-width: max-content;
   margin: 0;
-  padding: 10px 30px 10px 12px;
+  padding: 10px 30px 10px 13px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 18px;
@@ -17,7 +17,19 @@
     padding: 18px 30px 18px 12px;
     font-size: 22px;
     line-height: 24px;
+    transform: translateX(-483px);
   }
+
+  @media (min-width: $desktop-width-more) {
+    transform: translateX(-207px);
+  }
+
+  // &--footer {
+  //   @media (min-width: $desktop-width) and (max-width: $desktop-width-more) {
+  //     box-shadow: 100vw 0 0 $accent-color;
+  //     transform: translateX(-946px);
+  //   }
+  // }
 }
 
 .running-line__item {
@@ -27,10 +39,14 @@
     content: "";
     position: absolute;
     top: 6px;
-    right: -15px;
+    right: -18px;
     width: 6px;
     height: 6px;
     border-radius: 50%;
     background-color: $base-bg-color;
+
+    @media (min-width: $desktop-width) {
+      top: 9px;
+    }
   }
 }

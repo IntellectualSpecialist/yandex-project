@@ -7,7 +7,7 @@
   margin-bottom: 40px;
 
   @media (min-width: $desktop-width) {
-    max-width: none;
+    max-width: 806px;
     margin-bottom: 60px;
   }
 }
@@ -22,7 +22,7 @@
 .participants__toggles {
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 0;
+    top: 6px;
     right: 72px;
   }
 }
