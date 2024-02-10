@@ -18,14 +18,18 @@
   color: rgba($primary-text-color, 0.6);
 }
 
+.participant-card__image-container {
+  width: fit-content;
+  margin: 0 auto 28px;
+}
+
 .participant-card__image {
   display: block;
-  margin-bottom: 28px;
   border-radius: 50%;
 }
 
 .participant-card__more {
-  margin-top: 20px;
+  margin: 20px auto 0;
 
   @media (min-width: $desktop-width) {
     margin-top: 18px;

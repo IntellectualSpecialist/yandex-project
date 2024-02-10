@@ -1,5 +1,6 @@
 .slider {
   overflow-x: hidden;
+  // transition: transform 0.5s ease-in-out;
 }
 
 .slider__wrapper {
@@ -7,6 +8,8 @@
   min-width: max-content;
   column-gap: 40px;
   margin-bottom: 28px;
+  // transform: translateX(0);
+  // transition: transform 0.5s ease-in-out;
 
   @media (min-width: $desktop-width) {
     display: block;
@@ -16,6 +19,7 @@
 
 .slider__item {
   width: calc(100vw - 40px);
+  min-height: 300px;
   padding: 62px 24px 34px 72px;
   background-color: $tertiary-bg-color;
   background-image:
@@ -28,6 +32,7 @@
 
   @media (min-width: $desktop-width) {
     width: auto;
+    min-height: auto;
     padding: 0;
     background: none;
   }
@@ -98,6 +103,7 @@
 }
 
 .slider__counter {
+  min-width: 36px;
   font-size: 16px;
   line-height: 19px;
   color: rgba($primary-text-color, 0.6);
@@ -124,6 +130,7 @@
   }
 
   .slider__item {
+    min-height: auto;
     background: none;
 
     @media (min-width: $desktop-width) {
@@ -132,7 +139,11 @@
   }
 
   .slider__toggles {
-    column-gap: 15px;
+    column-gap: 12px;
     align-items: center;
+
+    @media (min-width: $desktop-width) {
+      column-gap: 15px;
+    }
   }
 }

@@ -60,8 +60,6 @@
 }
 
 .transformation__list {
-  counter-reset: transformation-list;
-
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(3, 394px);
@@ -92,6 +90,26 @@
   @media (min-width: $desktop-width) {
     grid-row: span 2;
   }
+}
+
+.transformation__counter-first {
+  counter-reset: transformation-list 0;
+}
+
+.transformation__counter-second {
+  counter-reset: transformation-list 2;
+}
+
+.transformation__counter-third {
+  counter-reset: transformation-list 3;
+}
+
+.transformation__counter-fourth {
+  counter-reset: transformation-list 5;
+}
+
+.transformation__counter-fifth {
+  counter-reset: transformation-list 6;
 }
 
 .transformation__item {
